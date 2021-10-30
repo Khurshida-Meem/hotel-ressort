@@ -1,0 +1,14 @@
+footer {
+    background-color: #3da9fc;
+    color: #fffffe;
+    width: 100%;
+}
+
+.foo-icon {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.copyright {
+    text-align: center;
+}
