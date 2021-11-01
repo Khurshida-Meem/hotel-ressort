@@ -10,7 +10,8 @@ const Services = () => {
     return (
         <div>
             <Container>
-                <h1 className='mt-5'>We Offer</h1>
+                <h3 className='mt-5 component-headings pb-2'>We Offer</h3>
+                <h1 className='fw-bold'>Rooms We Provide</h1>
 
                 {
                     !data.length ?

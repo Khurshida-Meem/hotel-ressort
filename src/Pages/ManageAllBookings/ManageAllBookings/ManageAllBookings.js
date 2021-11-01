@@ -13,7 +13,7 @@ const ManageAllBookings = () => {
 
     return (
         <div>
-            <Container>
+            <Container className='page-size'>
                 <h1 className="my-3">All Bookings</h1>
                 {
                     !orders.length ? "Currently you don't have any booking" :

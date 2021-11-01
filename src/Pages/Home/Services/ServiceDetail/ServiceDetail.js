@@ -6,6 +6,7 @@ import useData from '../../../../hooks/useData';
 import { useForm } from "react-hook-form";
 import useAuth from '../../../../hooks/useAuth';
 import axios from 'axios';
+import './ServiceDetail.css'
 
 
 const ServiceDetail = () => {
@@ -34,7 +35,7 @@ const ServiceDetail = () => {
         <Container>
             <div className='d-lg-flex mt-5'>
                 <div className='me-3'>
-                    <img src={img} alt={name} height="200px" />
+                    <img src={img} alt={name} className='img-fluid' />
                     <br />
                     <Rating
                         initialRating={rating}
@@ -52,25 +53,25 @@ const ServiceDetail = () => {
 
             <div>
                 <h1 className='mt-5 mb-3'>Book Now</h1>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form className='form-container' onSubmit={handleSubmit(onSubmit)}>
                     <div>
-                        <p>Your Name</p>
-                        <input type='text' defaultValue={user.displayName} {...register("username", { required: true })} />
-                        {errors.username && <span>This field is required</span>}
+                        <p className='mt-2 mb-0'>Your Name</p>
+                        <input className='field w-50 p-2' type='text' defaultValue={user.displayName} {...register("username", { required: true })} />
+                        {errors.username && <span className='error'>This field is required</span>}
                     </div>
                     <div>
-                        <p>Your Email</p>
-                        <input type='email' defaultValue={user.email} {...register("email", { required: true })} />
-                        {errors.email && <span>This field is required</span>}
+                        <p className='mt-2 mb-0'>Your Email</p>
+                        <input className='field w-50 p-2' type='email' defaultValue={user.email} {...register("email", { required: true })} />
+                        {errors.email && <span className='error'>This field is required</span>}
                     </div>
                     <div>
-                        <p>Contact</p>
-                        <input type='number' {...register("contact", { required: true })} />
-                        {errors.contact && <span>This field is required</span>}
+                        <p className='mt-2 mb-0'>Contact</p>
+                        <input className='field w-50 p-2' type='number' {...register("contact", { required: true })} />
+                        {errors.contact && <span className='error'>This field is required</span>}
                     </div>
                     <div>
-                        <p>Room Type</p>
-                        <select {...register("room", { required: true })}>
+                        <p className='mt-2 mb-0'>Room Type</p>
+                        <select className='field w-50 p-2' {...register("room", { required: true })}>
                             <option value="single-bed">Single Bed</option>
                             <option value="double-bed">Double Bed</option>
                             <option value="twin-bed">Twin Bed</option>
@@ -79,20 +80,20 @@ const ServiceDetail = () => {
                             <option value="penthouse">Penthouse Apartment</option>
 
                         </select>
-                        {errors.room && <span>This field is required</span>}
+                        {errors.room && <span className='error'>This field is required</span>}
                     </div>
                     <div>
-                        <p>Expected Arrival Date</p>
-                        <input type='date' {...register("arrival", { required: true })} />
-                        {errors.arrival && <span>This field is required</span>}
+                        <p className='mt-2 mb-0'>Expected Arrival Date</p>
+                        <input className='field w-50 p-2' type='date' {...register("arrival", { required: true })} />
+                        {errors.arrival && <span className='error'>This field is required</span>}
                     </div>
                     <div>
-                        <p>Expected Deperture Date</p>
-                        <input type='date' {...register("departure", { required: true })} />
-                        {errors.departure && <span>This field is required</span>}
+                        <p className='mt-2 mb-0'>Expected Deperture Date</p>
+                        <input className='field w-50 p-2' type='date' {...register("departure", { required: true })} />
+                        {errors.departure && <span className='error'>This field is required</span>}
                     </div>
 
-                    <input type="submit" />
+                    <input className='secondary-btn w-50 mt-4 py-2 text-white' type="submit" value="Book" />
                 </form>
             </div>
         </Container>

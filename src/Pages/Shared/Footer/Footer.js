@@ -12,33 +12,33 @@ const Footer = () => {
                     <div>
                         <div className='d-flex align-items-center'>
                             <img src={logo} alt="" width='50px' />
-                            <h2 className='ms-3 text-white'>Random Health Care</h2>
+                            <h2 className='ms-3'>Hotel Ressort</h2>
                         </div>
-                        <p className=" text-white">A perfect way for your stable future.</p>
+                        <p>A perfect Vacation is waiting for you.</p>
                         <div className='d-flex'>
-                            <p className='foo-icon dark-text'><i className="fab fa-facebook"></i></p>
-                            <p className='foo-icon dark-text'><i className="fab fa-instagram-square"></i></p>
-                            <p className='foo-icon dark-text'><i className="fab fa-twitter-square"></i></p>
+                            <p className='foo-icon'><i className="fab fa-facebook"></i></p>
+                            <p className='foo-icon'><i className="fab fa-instagram-square"></i></p>
+                            <p className='foo-icon '><i className="fab fa-twitter-square"></i></p>
                         </div>
                     </div>
                     {/*==================== 2nd part ================================*/}
                     <div>
-                        <h3 className=" text-white">Contact us</h3>
-                        <h5 className=" text-white"><i className="fas dark-text fa-phone"></i> +8801943475</h5>
-                        <h5 className=" text-white"><i className="far dark-text fa-envelope"></i> university@random.edu.bd</h5>
-                        <h5 className=" text-white"><i className="fas dark-text fa-globe"></i> web@random.com</h5>
+                        <h3>Contact us</h3>
+                        <h5><i className="fas fa-phone"></i> +8801943475</h5>
+                        <h5><i className="far fa-envelope"></i> hotel@ressort.bd</h5>
+                        <h5><i className="fas fa-globe"></i> web@ressort.com</h5>
                     </div>
                     {/*==================== newsLetter ================================*/}
                     <div className="mx-2">
-                        <h3 className="text-white">Join Our NewsLetter</h3>
+                        <h3 >Join Our NewsLetter</h3>
                         <input type="email" placeholder="@Email" className="px-2 py-2 my-2 w-100 border-0 rounded " />
                         <br />
-                        <button className="primary-btn px-5 py-2 rounded text-white fw-bold">Subscribe</button>
+                        <button className="secondary-btn px-5 py-2 rounded fw-bold">Subscribe</button>
                     </div>
                 </div>
 
             </Container>
-            <p className='copyright text-white mb-0 pb-0'> &copy; copyright 2021 Random Health Care Center. All rights reserved</p>
+            <p className='copyright mb-0 pb-0'> &copy; copyright 2021 Hotel Ressort. All rights reserved</p>
         </footer>
     );
 };
