@@ -18,7 +18,7 @@ const SignIn = () => {
             .finally(() => setIsLoading(false));
     }
     return (
-        <Container className="d-flex justify-content-center my-5">
+        <Container className="d-flex justify-content-center my-5 page-size">
             {
                 !user ?
                     <div className="text-center">
