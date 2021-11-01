@@ -5,6 +5,7 @@ import { useParams } from 'react-router';
 import useData from '../../../../hooks/useData';
 import { useForm } from "react-hook-form";
 import useAuth from '../../../../hooks/useAuth';
+import axios from 'axios';
 
 
 const ServiceDetail = () => {
@@ -17,8 +18,18 @@ const ServiceDetail = () => {
     // details form
     const { firebaseContext } = useAuth();
     const { user } = firebaseContext;
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const onSubmit = data => {
+        const status = { status: "Pending" };
+        data.status = status;
+        axios.post('https://hotel-ressort.herokuapp.com/bookings', data)
+            .then(res => {
+                if (res.data.insertedId) {
+                    alert('Booking is Successfully Added. We will inform furthur information');
+                    reset();
+                }
+            })
+    };
     return (
         <Container>
             <div className='d-lg-flex mt-5'>
@@ -45,6 +56,7 @@ const ServiceDetail = () => {
                     <div>
                         <p>Your Name</p>
                         <input type='text' defaultValue={user.displayName} {...register("username", { required: true })} />
+                        {errors.username && <span>This field is required</span>}
                     </div>
                     <div>
                         <p>Your Email</p>

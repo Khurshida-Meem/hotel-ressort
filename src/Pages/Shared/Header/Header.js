@@ -30,7 +30,7 @@ const Header = () => {
                                     <div className="d-flex align-items-center">
                                         <NavLink className="navlinks  me-3 pb-2" to='/my_booking'>My Bookings</NavLink>
                                         <NavLink className="navlinks  me-3 pb-2" to='/manage_bookings'>Manage All Bookings</NavLink>
-                                        <NavLink className="navlinks  me-3 pb-2" to='/add_service'>Add A New Service</NavLink>
+                                        <NavLink className="navlinks  me-3 pb-2" to='/add_service'>Add New Service</NavLink>
                                         <p className=" pb-2 mt-3">{!user.displayName ? user.email : user.displayName}</p>
                                         <button className="border-0 light-bg  fw-bold ms-3 pb-2" onClick={logOut}>Logout</button>
                                     </div>

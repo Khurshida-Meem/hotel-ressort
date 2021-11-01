@@ -2,6 +2,7 @@ import React from 'react';
 import { Spinner } from 'react-bootstrap';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../hooks/useAuth';
+import Loader from "react-loader-spinner";
 
 const PrivateRoute = ({ children, ...rest }) => {
 
@@ -11,7 +12,7 @@ const PrivateRoute = ({ children, ...rest }) => {
         // spinner
         return (
             <div className="text-center mt-5">
-                <Spinner animation="border" variant="info" />
+                <Loader type="BallTriangle" color="#00BFFF" height={80} width={80} />
             </div>
         )
     }

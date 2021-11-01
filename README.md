@@ -1,7 +1,11 @@
 # Hotel Ressort
 
-This project is live on [Live Site](https://github.com/facebook/create-react-app).
+This project is live on [Live Site](https://hotel-ressort.web.app/).
 
 ## Available Features
 
-- Available features are loading
+- dynamic service add
+- make bookings
+- show own bookings
+- show all bookings
+- delete bookings

@@ -4,7 +4,7 @@
         "name": "Single Room",
         "short_desc": "We provide single room for single people",
         "large_desc": "A single room, also known as a standard room, when referring to hotel rooms, is a room that is only guaranteed and/or permitted to accommodate one guest. A single room may be configured with different bed sizes, such as a twin-sized bed, double bed, or even a queen bed (though that would probably earn it the right to be called a double room).",
-        "img": "https: //i.ibb.co/6YsTV1z/single-room.jpg",
+        "img": "https://i.ibb.co/6YsTV1z/single-room.jpg",
         "rating": 4.5,
         "served": 540
     },
@@ -13,7 +13,7 @@
         "name": "Double Room",
         "short_desc": "We provide double room for couples",
         "large_desc": "A double room, also known as a twin room, is a basic hotel room outfitted to easily and comfortably accommodate two guests. Though a double room may be able to sleep more than two hotel guests, it is likely the case that the hotel will only permit a party of two or just one guest into a double room, at least without adding a surcharge.",
-        "img": "https: //i.ibb.co/dtQjnSh/double-room.jpg",
+        "img": "https://i.ibb.co/dtQjnSh/double-room.jpg",
         "rating": 4.8,
         "served": 640
     },
@@ -22,7 +22,7 @@
         "name": "Twine Room",
         "short_desc": "We provide Twine room for just friends",
         "large_desc": "Twin beds are two single beds in one bedroom. For larger groups, there are rooms with both twin beds and bunk beds. The hotel rooms have one double bed or twin beds.",
-        "img": "https: //i.ibb.co/c2YR5gz/twin-room.jpg",
+        "img": "https://i.ibb.co/c2YR5gz/twin-room.jpg",
         "rating": 4.8,
         "served": 940
     },
@@ -31,7 +31,7 @@
         "name": "Duplex Suite",
         "short_desc": "We provide Duplex suite for family people",
         "large_desc": "Twin beds are two single beds in one bedroom. For larger groups, there are rooms with both twin beds and bunk beds. The hotel rooms have one double bed or twin beds.",
-        "img": "https: //i.ibb.co/WtbHHTS/duplex-suite.jpg",
+        "img": "https://i.ibb.co/WtbHHTS/duplex-suite.jpg",
         "rating": 4.8,
         "served": 140
     },
@@ -40,7 +40,7 @@
         "name": "Beach Cavana",
         "short_desc": "We have beach cavana for romantic couple",
         "large_desc": "Twin beds are two single beds in one bedroom. For larger groups, there are rooms with both twin beds and bunk beds. The hotel rooms have one double bed or twin beds.",
-        "img": "https: //i.ibb.co/QCsW2nV/beach-cabana.jpg",
+        "img": "https://i.ibb.co/QCsW2nV/beach-cabana.jpg",
         "rating": 4.8,
         "served": 10
     },

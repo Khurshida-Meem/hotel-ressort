@@ -1,19 +1,21 @@
 import React from 'react';
-import { Container, Row, Spinner } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import useData from '../../../../hooks/useData';
 import SingleService from '../SingleService/SingleService';
+import Loader from "react-loader-spinner";
 
 const Services = () => {
-    const { data, loading } = useData('https://hotel-ressort.herokuapp.com/rooms');
-
+    const { data } = useData('https://hotel-ressort.herokuapp.com/rooms');
+    console.log(data.length)
     return (
         <div>
             <Container>
                 <h1 className='mt-5'>We Offer</h1>
+
                 {
-                    loading ?
-                        <div className="text-center mt-5">
-                            <Spinner animation="border" variant="primary" />
+                    !data.length ?
+                        <div className='text-center'>
+                            <Loader type="BallTriangle" color="#00BFFF" height={80} width={80} />
                         </div> :
                         <Row xs={1} md={2} lg={3} className="g-4">
                             {
