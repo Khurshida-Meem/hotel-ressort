@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 
 const ManageSingleOrder = (props) => {
 
@@ -56,19 +56,37 @@ const ManageSingleOrder = (props) => {
     return (
         <div>
             <Container>
-                <div className='booking-container m-2 p-3'>
 
-                    <p>Name: {username}</p>
-                    <p>Email: {email}</p>
-                    <p>Contact: {contact}</p>
-                    <p>Suite: {room}</p>
-                    <p>Arrival: {arrival}</p>
-                    <p>Departure: {departure}</p>
-                    <p>Status: {status.status}</p>
-                    <button onClick={() => handleDelete(_id)} className='btn btn-danger me-2'>Delete</button>
-                    <button onClick={() => handleStatus(_id)} className='btn btn-primary'>Approve</button>
-                </div>
+                <Table striped bordered hover size="sm" responsive="sm">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Suite</th>
+                            <th>Arrival</th>
+                            <th>Departure</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{username}</td>
+                            <td>{email}</td>
+                            <td>{contact}</td>
+                            <td>{room}</td>
+                            <td>{arrival}</td>
+                            <td>{departure}</td>
+                            <td>{status.status}</td>
+                            <td>
+                                <button onClick={() => handleDelete(_id)} className='btn btn-danger me-2'>Delete</button>
+                                <button onClick={() => handleStatus(_id)} className='btn btn-primary'>Approve</button>
+                            </td>
+                        </tr>
 
+                    </tbody>
+                </Table>
             </Container>
         </div>
     );

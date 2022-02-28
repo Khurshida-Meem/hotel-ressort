@@ -22,7 +22,7 @@ const SignIn = () => {
             {
                 !user ?
                     <div className="text-center">
-                        <button className="btn-primary py-2 rounded  fw-bold mb-3" onClick={handleGoogleLogin}><i className="fab fa-google"></i> Sign In Using Google</button>
+                        <button className="btn btn-primary py-2 rounded  fw-bold mb-3" onClick={handleGoogleLogin}><i className="fab fa-google"></i> Sign In Using Google</button>
                     </div> :
                     <h3 className="pb-5">Wellcome to Hotel Ressort {user.displayName}</h3>
             }

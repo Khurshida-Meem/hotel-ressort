@@ -7,6 +7,7 @@ import home from '../../../images/house-solid.svg';
 import userImg from '../../../images/user-solid.svg';
 import logoutImg from '../../../images/arrow-right-from-bracket-solid.svg';
 import './Header.css';
+import loginIng from '../../../images/arrow-right-from-bracket-solid.svg';
 
 const Header = () => {
     const { firebaseContext } = useAuth();
@@ -23,14 +24,16 @@ const Header = () => {
                             height="50px"
                             alt="hotel ressort logo"
                         />
+
+                        Hotel Resort
                     </Navbar.Brand>
                     <Navbar.Toggle className="border-0 " aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="ms-auto d-lg-flex align-items-center">
-                            <img src={home} alt="" height='15px' />
-                            <NavLink className="navlink-home  me-4" to='/home'>Home</NavLink>
+
+                            <NavLink className="navlink-home ms-1 me-4" to='/home'><img src={home} alt="" height='15px' /> Home</NavLink>
                             {
-                                !user ? <NavLink className="navlinks  me-3" to='/signin'>Sign In</NavLink> :
+                                !user ? <NavLink className="navlink-home  me-3" to='/signin'><img src={loginIng} alt="" height='15px' /> Sign In</NavLink> :
                                     <div className="d-lg-flex align-items-center">
                                         <img src={userImg} alt="" height='15px' />
                                         <NavDropdown title={!user.displayName ? user.email : user.displayName} id="basic-nav-dropdown">
