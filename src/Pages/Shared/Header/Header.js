@@ -34,12 +34,12 @@ const Header = () => {
                             <NavLink className="navlink-home me-4 d-flex align-items-center" to='/home'><img className='me-1' src={home} alt="" height='20px' /> <span>Home</span></NavLink>
                             {
                                 !user ? <NavLink className="navlink-home  ms-3" to='/signin'><img src={loginIng} alt="" height='20px' /> Sign In</NavLink> :
-                                    <div className="d-lg-flex align-items-center">
-                                        <img src={userImg} alt="" height='15px' />
+                                    <div className="d-flex align-items-center">
+                                        {/* <img className='me-1' src={userImg} alt="" height='20px' /> */}
                                         <NavDropdown title={!user.displayName ? user.email : user.displayName} id="basic-nav-dropdown">
                                             <NavLink className="navlinks" to='/my_booking'>My Bookings</NavLink>
                                             <NavDropdown.Divider />
-                                            <NavLink className="navlinks py-1" to='/manage_bookings'>Manage All Bookings</NavLink>
+                                            <NavLink className="navlinks py-1 px-2" to='/manage_bookings'>Manage All Bookings</NavLink>
                                             <NavDropdown.Divider />
                                             <NavLink className="navlinks py-1" to='/add_service'>Add New Service</NavLink>
                                             <NavDropdown.Divider />

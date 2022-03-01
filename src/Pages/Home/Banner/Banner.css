@@ -29,6 +29,11 @@
     text-align: center;
 }
 
+.banner-p {
+    position: relative;
+    color: #ffffff;
+}
+
 .banner-btn {
     position: relative;
 }

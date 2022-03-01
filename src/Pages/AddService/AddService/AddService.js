@@ -54,7 +54,7 @@ const AddService = () => {
                         </div>
                     </Col>
                     <Col>
-                        <img className='w-75 img-fluid' src={img} alt="" />
+                        <img className='w-75 mt-2 img-fluid' src={img} alt="" />
                     </Col>
                 </Row>
 

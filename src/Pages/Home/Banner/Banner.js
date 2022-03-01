@@ -8,7 +8,10 @@ const Banner = () => {
             <div className='d-flex justify-content-center align-items-center'>
                 <Container>
                     <div className='banner-content'>
-                        <h1 className='display-2 text-white'>Wellcome to Hotel <span className='primary'>Resort</span> </h1>
+                        <h1 className='display-2 text-white banner-header'>Wellcome to Hotel <span className='primary'>Resort</span> </h1>
+                    </div>
+                    <div>
+                        <p className='text-center banner-p'>Make your summer more colorful than ever</p>
 
                     </div>
                     <div className='text-center'>

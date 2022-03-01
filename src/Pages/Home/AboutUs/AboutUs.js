@@ -13,7 +13,7 @@ const AboutUs = () => {
                     <div>
                         <h3 className='mt-5 component-headings pb-2'>About Us</h3>
                         <h1 className='fw-bold'>Learn About Us</h1>
-                        <p className='pe-2'>
+                        <p className='pe-4 word-break'>
                             With 114 world-class rooms, including 18 suites, the FARS Hotel & Resorts, Dhaka, is an urban retreat in one of the city's most vibrant districts. Decorated in a sleek, contemporary style, each of the rooms offers free high-speed WiFi Internet access along with international standard bath amenities, tea and coffees. Families appreciate the convenience of 6 interconnecting rooms. Guests may also request handicap-accessible, smoking and non-smoking rooms. All rooms include complimentary access to the hotel's fitness facilities, swimming pool.
                         </p>
                     </div>
