@@ -31,3 +31,15 @@
     position: absolute;
 
 }
+
+.red {
+    color: rgb(225, 71, 73);
+}
+
+.rocket {
+    color: #ba3b3d;
+}
+
+.yellow {
+    color: #FFDC00;
+}

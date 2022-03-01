@@ -1,5 +1,5 @@
 .primary {
-  color: #00ebc7;
+  color: #FFDC00;
 }
 
 .secondary {
@@ -11,7 +11,7 @@
 }
 
 .primary-bg {
-  background-color: #00ebc7;
+  background-color: #FFDC00;
 }
 
 .secondary-bg {
@@ -32,17 +32,18 @@ p {
 }
 
 .menubar {
-  background-color: #00ebc880;
+  background-color: #FFDC00;
 }
 
 .primary-btn {
-  background-color: #00ebc7;
+  background-color: rgb(225, 71, 73);
   border: none;
   transition: 0.3s;
+  color: white;
 }
 
 .primary-btn:hover {
-  background-color: #2ec5ae;
+  background-color: #ba3b3d;
 }
 
 .secondary-btn {

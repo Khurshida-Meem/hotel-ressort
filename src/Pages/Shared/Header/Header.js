@@ -31,9 +31,9 @@ const Header = () => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="ms-auto d-lg-flex align-items-center">
 
-                            <NavLink className="navlink-home ms-1 me-4" to='/home'><img src={home} alt="" height='15px' /> Home</NavLink>
+                            <NavLink className="navlink-home me-4 d-flex align-items-center" to='/home'><img className='me-1' src={home} alt="" height='20px' /> <span>Home</span></NavLink>
                             {
-                                !user ? <NavLink className="navlink-home  me-3" to='/signin'><img src={loginIng} alt="" height='15px' /> Sign In</NavLink> :
+                                !user ? <NavLink className="navlink-home  ms-3" to='/signin'><img src={loginIng} alt="" height='20px' /> Sign In</NavLink> :
                                     <div className="d-lg-flex align-items-center">
                                         <img src={userImg} alt="" height='15px' />
                                         <NavDropdown title={!user.displayName ? user.email : user.displayName} id="basic-nav-dropdown">
